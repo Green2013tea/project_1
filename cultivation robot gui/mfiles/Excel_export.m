@@ -5,7 +5,7 @@ cd(folder)
 exp = uigetdir;
 cd(exp);
 
-file = 'IL_22-32.xlsx';
+file = 'IL_22-32.xlsx'; % add your excel file name here
 header = rwithOD';
 
 
