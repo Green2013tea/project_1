@@ -5,7 +5,7 @@ cd(folder)
 exp = uigetdir;
 cd(exp);
 
-file = 'IL_22-32.xlsx';
+file = 'IL_22-32.xlsx'; % add your excel file name here
 header = rwithOD';
 
 
@@ -27,15 +27,15 @@ xlswrite(file,ODdata,sheet,'A2');
 xlswrite(file,{'time [h]'},sheet,'A1');
 xlswrite(file,header,sheet,'B1');
 
-% sheet = 'Dissolved Oxygen';
-% xlswrite(file,DOdata,sheet,'A2');
-% xlswrite(file,{'time [h]'},sheet,'A1');
-% xlswrite(file,header,sheet,'B1');
+sheet = 'Dissolved Oxygen';
+xlswrite(file,DOdata,sheet,'A2');
+xlswrite(file,{'time [h]'},sheet,'A1');
+xlswrite(file,header,sheet,'B1');
 
-% sheet = 'pH';
-% xlswrite(file,pHdata,sheet,'A2');
-% xlswrite(file,{'time [h]'},sheet,'A1');
-% xlswrite(file,header,sheet,'B1');
+sheet = 'pH';
+xlswrite(file,pHdata,sheet,'A2');
+xlswrite(file,{'time [h]'},sheet,'A1');
+xlswrite(file,header,sheet,'B1');
 
 cd(mainfolder);
     

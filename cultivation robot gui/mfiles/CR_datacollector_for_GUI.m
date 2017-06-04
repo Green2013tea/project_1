@@ -1,6 +1,6 @@
 %% Open file and folder
 
-[filename,folder]  = uigetfile('*.xls');
+[filename,folder]  = uigetfile('*.xls'); % open file ffrom dir
 cd(folder);
 data = importdata(filename);
 
