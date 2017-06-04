@@ -27,15 +27,15 @@ xlswrite(file,ODdata,sheet,'A2');
 xlswrite(file,{'time [h]'},sheet,'A1');
 xlswrite(file,header,sheet,'B1');
 
-% sheet = 'Dissolved Oxygen';
-% xlswrite(file,DOdata,sheet,'A2');
-% xlswrite(file,{'time [h]'},sheet,'A1');
-% xlswrite(file,header,sheet,'B1');
+sheet = 'Dissolved Oxygen';
+xlswrite(file,DOdata,sheet,'A2');
+xlswrite(file,{'time [h]'},sheet,'A1');
+xlswrite(file,header,sheet,'B1');
 
-% sheet = 'pH';
-% xlswrite(file,pHdata,sheet,'A2');
-% xlswrite(file,{'time [h]'},sheet,'A1');
-% xlswrite(file,header,sheet,'B1');
+sheet = 'pH';
+xlswrite(file,pHdata,sheet,'A2');
+xlswrite(file,{'time [h]'},sheet,'A1');
+xlswrite(file,header,sheet,'B1');
 
 cd(mainfolder);
     
